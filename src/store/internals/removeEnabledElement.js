@@ -2,6 +2,7 @@ import {
   mouseEventListeners,
   wheelEventListener,
   touchEventListeners,
+  airFingerEventListeners,
 } from '../../eventListeners/index.js';
 import {
   imageRenderedEventDispatcher,
@@ -50,6 +51,7 @@ export default function(elementDisabledEvt) {
     mouseEventListeners.disable(enabledElement);
     wheelEventListener.disable(enabledElement);
     mouseToolEventDispatcher.disable(enabledElement);
+    airFingerEventListeners.disable(enabledElement);
   }
 
   // Touch

@@ -429,4 +429,6 @@ export {
 
 export { default as import } from './importInternal.js';
 
+console.log('==> Using ADIS local dev version of cornerstone-tools');
+
 export default cornerstoneTools;
