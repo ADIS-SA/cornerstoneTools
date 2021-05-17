@@ -3,6 +3,8 @@ import {
   wheelEventListener,
   touchEventListeners,
   airFingerEventListeners,
+  airHorizEventListeners,
+  airVertEventListeners,
 } from '../../eventListeners/index.js';
 import {
   imageRenderedEventDispatcher,
@@ -65,6 +67,8 @@ export default function(elementEnabledEvt) {
     wheelEventListener.enable(enabledElement);
     mouseToolEventDispatcher.enable(enabledElement);
     airFingerEventListeners.enable(enabledElement);
+    airHorizEventListeners.enable(enabledElement);
+    airVertEventListeners.enable(enabledElement);
   }
 
   // Touch
