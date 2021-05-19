@@ -49,7 +49,7 @@ export default function(context, textLines, x, y, color, options) {
     textLines = [textLines];
   }
 
-  const padding = 5;
+  const padding = 15;
   const fontSize = textStyle.getFontSize();
   const backgroundColor = textStyle.getBackgroundColor();
 
