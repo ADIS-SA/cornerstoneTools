@@ -702,24 +702,19 @@ export default class FreehandRoiTool extends BaseAnnotationTool {
   }
 
   _drawingDrag(evt) {
-    const eventData = evt.detail;
-    const { element } = eventData;
-
-    const toolState = getToolState(element, this.name);
-
-    const config = this.configuration;
-    const currentTool = config.currentTool;
-
-    const data = toolState.data[currentTool];
-
-    // Set the mouseLocation handle
-    this._getMouseLocation(eventData);
-    this._checkInvalidHandleLocation(data, eventData);
-    this._addPointPencilMode(eventData, data.handles.points);
-    this._dragging = true;
-
-    // Force onImageRendered
-    external.cornerstone.updateImage(element);
+    // const eventData = evt.detail;
+    // const { element } = eventData;
+    // const toolState = getToolState(element, this.name);
+    // const config = this.configuration;
+    // const currentTool = config.currentTool;
+    // const data = toolState.data[currentTool];
+    // // Set the mouseLocation handle
+    // this._getMouseLocation(eventData);
+    // this._checkInvalidHandleLocation(data, eventData);
+    // this._addPointPencilMode(eventData, data.handles.points);
+    // this._dragging = true;
+    // // Force onImageRendered
+    // external.cornerstone.updateImage(element);
   }
 
   /**
