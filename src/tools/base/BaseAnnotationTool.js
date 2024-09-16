@@ -141,6 +141,9 @@ class BaseAnnotationTool extends BaseTool {
    * @returns {void}
    */
   handleSelectedCallback(evt, toolData, handle, interactionType = 'mouse') {
+    if (!this.options.mouseButtonMask.includes(evt.detail.buttons)) {
+      return;
+    }
     moveHandleNearImagePoint(evt, this, toolData, handle, interactionType);
   }
 
@@ -156,6 +159,9 @@ class BaseAnnotationTool extends BaseTool {
    * @returns {void}
    */
   toolSelectedCallback(evt, annotation, interactionType = 'mouse') {
+    if (!this.options.mouseButtonMask.includes(evt.detail.buttons)) {
+      return;
+    }
     moveAnnotation(evt, this, annotation, interactionType);
   }
 
